@@ -5,12 +5,14 @@ import 'package:edified/screens/empty_screen.dart';
 class HomeScreen extends StatefulWidget {
   static String id = 'home_screen';
 
+  const HomeScreen({super.key});
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  TextEditingController _searchController = TextEditingController();
+  final TextEditingController _searchController = TextEditingController();
   String _searchText = "";
   final _auth = FirebaseAuth.instance;
   late User loggedInUser;
