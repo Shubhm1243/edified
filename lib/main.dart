@@ -1,6 +1,9 @@
+import 'package:edified/screens/e_books.dart';
 import 'package:edified/screens/home_screen.dart';
 import 'package:edified/screens/login_screen/login.dart';
+import 'package:edified/screens/online_courses.dart';
 import 'package:edified/screens/register_screen/register.dart';
+import 'package:edified/screens/register_screen/study_material.dart';
 import 'package:edified/screens/welcome_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +28,9 @@ class MyApp extends StatelessWidget {
         LoginScreen.id: (context) => LoginScreen(),
         SignUpScreen.id: (context) => SignUpScreen(),
         EmptyScreen.id: (context) => EmptyScreen(),
+        OnlineCourses.id: (context) => OnlineCourses(),
+        Ebooks.id: (context) => Ebooks(),
+        StudyMaterial.id: (context) => StudyMaterial(),
       },
     );
   }

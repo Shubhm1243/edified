@@ -1,3 +1,4 @@
+import 'package:edified/screens/register_screen/study_material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:edified/screens/empty_screen.dart';
@@ -333,7 +334,7 @@ class MyDrawer extends StatelessWidget {
           ListTile(
             title: const Text('Study Materials'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.pushNamed(context, StudyMaterial.id);
             },
           ),
           ListTile(

@@ -42,6 +42,11 @@ dependencies:
   http: ^0.13.3
   html: ^0.15.2
   universal_html: ^2.2.1
+  flutter_typeahead: ^4.3.7
+  firebase_database: ^10.1.0
+  file_picker: ^4.2.0
+  path_provider: ^2.0.5
+  firebase_storage: ^11.1.0
 
 dev_dependencies:
   flutter_test:
@@ -76,6 +81,8 @@ flutter:
     - images/login.jpeg
     - images/signup.jpeg
     - images/js.jpeg
+    - assets/invoice-001.pdf
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
