@@ -44,8 +44,8 @@ dependencies:
   universal_html: ^2.2.1
   flutter_typeahead: ^4.3.7
   firebase_database: ^10.1.0
-  file_picker: ^4.2.0
-  path_provider: ^2.0.5
+  file_picker: ^5.2.9
+  path_provider: ^2.0.14
   firebase_storage: ^11.1.0
 
 dev_dependencies:
@@ -82,6 +82,28 @@ flutter:
     - images/signup.jpeg
     - images/js.jpeg
     - assets/invoice-001.pdf
+    - images/loginnew.png
+    - images/signupnew.png
+    - images/javascript.png
+    - images/python.png
+    - images/c++.png
+    - images/flutter.png
+    - images/linkedlist.png
+    - images/stack.png
+    - images/queue.png
+    - images/tree.png
+    - images/os.png
+    - images/dbms.png
+    - images/fla.png
+    - images/maths10.png
+    - images/chemistry.png
+    - images/bio.png
+    - images/science.png
+    - images/social.png
+    - images/english.png
+    - images/maths12.png
+    - images/physics.png
+    - images/lastlogo.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -105,6 +127,9 @@ flutter:
     - family: Sacramento
       fonts:
         - asset: fonts/Sacramento-Regular.ttf
+    - family: Barlow
+      fonts:
+        - asset: fonts/Barlow-Thin.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:

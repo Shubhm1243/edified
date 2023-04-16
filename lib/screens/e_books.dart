@@ -57,7 +57,7 @@ class _EbooksState extends State<Ebooks> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image(
-                            image: AssetImage('images/js.jpeg'),
+                            image: AssetImage('images/c++.png'),
                           ),
                           Text(
                             'C++ Programming',
@@ -91,6 +91,11 @@ class _EbooksState extends State<Ebooks> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('images/os.png'),
+                              ),
+                            ),
                             Text(
                               'Operating System',
                               style: TextStyle(
@@ -120,6 +125,11 @@ class _EbooksState extends State<Ebooks> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          Expanded(
+                            child: Image(
+                              image: AssetImage('images/dbms.png'),
+                            ),
+                          ),
                           Text(
                             'DBMS',
                             style: TextStyle(
@@ -148,6 +158,11 @@ class _EbooksState extends State<Ebooks> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          Expanded(
+                            child: Image(
+                              image: AssetImage('images/fla.png'),
+                            ),
+                          ),
                           Text(
                             'Formal Language Automata',
                             style: TextStyle(
@@ -194,8 +209,10 @@ class _EbooksState extends State<Ebooks> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image(
-                                image: AssetImage('images/js.jpeg'),
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/maths10.png'),
+                                ),
                               ),
                               Text(
                                 'Mathematics',
@@ -223,6 +240,11 @@ class _EbooksState extends State<Ebooks> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('images/science.png'),
+                              ),
+                            ),
                             Text(
                               'Science',
                               style: TextStyle(
@@ -252,6 +274,11 @@ class _EbooksState extends State<Ebooks> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/social.png'),
+                                ),
+                              ),
                               Text(
                                 'Social Studies',
                                 style: TextStyle(
@@ -282,6 +309,11 @@ class _EbooksState extends State<Ebooks> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/english.png'),
+                                ),
+                              ),
                               Text(
                                 'English',
                                 style: TextStyle(
@@ -327,8 +359,10 @@ class _EbooksState extends State<Ebooks> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image(
-                                image: AssetImage('images/js.jpeg'),
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/maths12.png'),
+                                ),
                               ),
                               Text(
                                 'Mathematics',
@@ -356,6 +390,11 @@ class _EbooksState extends State<Ebooks> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('images/bio.png'),
+                              ),
+                            ),
                             Text(
                               'Biology',
                               style: TextStyle(
@@ -385,6 +424,11 @@ class _EbooksState extends State<Ebooks> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/physics.png'),
+                                ),
+                              ),
                               Text(
                                 'Physics',
                                 style: TextStyle(
@@ -415,6 +459,11 @@ class _EbooksState extends State<Ebooks> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/chemistry.png'),
+                                ),
+                              ),
                               Text(
                                 'Chemistry',
                                 style: TextStyle(
@@ -441,6 +490,12 @@ class _EbooksState extends State<Ebooks> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Icon(Icons.add),
+        backgroundColor: Colors.white70,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }

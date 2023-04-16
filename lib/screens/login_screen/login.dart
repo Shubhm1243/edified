@@ -34,8 +34,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text(
                     "Edified",
                     style: TextStyle(fontSize: 50, color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Sacramento'),
+                    fontFamily: 'Barlow'),
                   ),
                 ],
               ),
@@ -60,7 +59,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image(image: AssetImage('images/login.jpeg'),),
+                  Image(image: AssetImage('images/loginnew.png'),),
                   SizedBox(
                     height: 60,
                   ),

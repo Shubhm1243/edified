@@ -5,7 +5,6 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class StudyMaterial extends StatefulWidget {
-
   static String id = 'study_material';
 
   @override
@@ -13,7 +12,7 @@ class StudyMaterial extends StatefulWidget {
 }
 
 class _StudyMaterialState extends State<StudyMaterial> {
-  late File? _file ;
+  late File? _file;
   late String _fileName = '';
 
   @override
@@ -31,10 +30,9 @@ class _StudyMaterialState extends State<StudyMaterial> {
     if (result != null) {
       setState(() {
         _file = File(result.files.single.path!);
-        _fileName = result.files.single.name!;
+        _fileName = result.files.single.name;
       });
-    }
-    else {
+    } else {
       setState(() {
         _file = null;
         _fileName = '';
@@ -44,6 +42,7 @@ class _StudyMaterialState extends State<StudyMaterial> {
   }
 
   Future<void> _uploadFile() async {
+
     if (_file == null) {
       return;
     }
@@ -60,14 +59,21 @@ class _StudyMaterialState extends State<StudyMaterial> {
     FirebaseFirestore.instance.collection('pdfs').add({
       'name': _fileName,
       'url': downloadURL,
+    })
+    .then((value) => {
+    setState(() {
+    _file = null;
+    _fileName = '';
+    }),
     });
-  }
+
+    }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Upload PDF'),
+        title: Text('Study Material'),
       ),
       body: Center(
         child: Column(

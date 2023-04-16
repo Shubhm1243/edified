@@ -57,7 +57,7 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image(
-                            image: AssetImage('images/js.jpeg'),
+                            image: AssetImage('images/linkedlist.png'),
                           ),
                           Text(
                             'Linked List',
@@ -91,6 +91,9 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Image(
+                              image: AssetImage('images/stack.png'),height: 170,width:170 ,
+                            ),
                             Text(
                               'Stack',
                               style: TextStyle(
@@ -120,6 +123,9 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          Image(
+                            image: AssetImage('images/queue.png'),
+                          ),
                           Text(
                             'Queues',
                             style: TextStyle(
@@ -148,6 +154,9 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          Image(
+                            image: AssetImage('images/tree.png'),
+                          ),
                           Text(
                             'Trees',
                             style: TextStyle(
@@ -194,8 +203,10 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image(
-                                image: AssetImage('images/js.jpeg'),
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/maths10.png'),
+                                ),
                               ),
                               Text(
                                 'Mathematics',
@@ -223,6 +234,11 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('images/science.png'),
+                              ),
+                            ),
                             Text(
                               'Science',
                               style: TextStyle(
@@ -252,6 +268,11 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/social.png'),
+                                ),
+                              ),
                               Text(
                                 'Social Studies',
                                 style: TextStyle(
@@ -282,6 +303,11 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/english.png'),
+                                ),
+                              ),
                               Text(
                                 'English',
                                 style: TextStyle(
@@ -327,8 +353,10 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Image(
-                                image: AssetImage('images/js.jpeg'),
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/maths12.png'),
+                                ),
                               ),
                               Text(
                                 'Mathematics',
@@ -356,8 +384,13 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Expanded(
+                              child: Image(
+                                image: AssetImage('images/maths10.png'),
+                              ),
+                            ),
                             Text(
-                              'Biology',
+                              'Science',
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 25,
@@ -385,6 +418,11 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/physics.png'),
+                                ),
+                              ),
                               Text(
                                 'Physics',
                                 style: TextStyle(
@@ -415,6 +453,11 @@ class _OnlineCoursesState extends State<OnlineCourses> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
+                              Expanded(
+                                child: Image(
+                                  image: AssetImage('images/chemistry.png'),
+                                ),
+                              ),
                               Text(
                                 'Chemistry',
                                 style: TextStyle(
@@ -441,6 +484,12 @@ class _OnlineCoursesState extends State<OnlineCourses> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        child: Icon(Icons.add),
+        backgroundColor: Colors.white70,
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }

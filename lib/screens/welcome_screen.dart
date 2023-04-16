@@ -78,6 +78,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       height: 42.0,
                       child: Text(
                         'Login',
+                        style: TextStyle(
+                          fontSize: 22,
+                        ),
                       ),
                     ),
                   ),
@@ -96,6 +99,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       height: 42.0,
                       child: Text(
                         'Sign Up',
+                        style: TextStyle(
+                        fontSize: 22,
+                      ),
                       ),
                     ),
                   ),

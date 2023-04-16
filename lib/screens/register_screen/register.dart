@@ -33,8 +33,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Udified",
-                    style: TextStyle(fontSize: 30, color: Colors.white),
+                    "Edified",
+                    style: TextStyle(fontSize: 50, color: Colors.white,fontFamily: 'Barlow'),
                   ),
                 ],
               ),
@@ -59,7 +59,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Image(image: AssetImage('images/signup.jpeg'),),
+                  Image(image: AssetImage('images/signupnew.png'),),
+                  SizedBox(height: 20,),
                   SingleChildScrollView(
                     physics: BouncingScrollPhysics(),
                     child: TextField(
@@ -130,6 +131,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         height: 42.0,
                         child: Text(
                           'Continue',
+                          style: TextStyle(
+                          fontSize: 22,
+                        ),
                         ),
                       ),
                     ),
