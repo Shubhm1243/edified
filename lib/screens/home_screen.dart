@@ -5,6 +5,10 @@ import 'package:edified/screens/welcome_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:edified/screens/empty_screen.dart';
+import 'package:edified/eddy/eddy.skeleton.dart';
+import 'package:edified/eddy/eddy.summarizer.dart';
+
+import '../search_for_gpt.dart';
 
 class HomeScreen extends StatefulWidget {
   static String id = 'home_screen';
@@ -301,7 +305,15 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: ()async{
+          
+          Navigator.pushNamed(context, SearchForGpt.id);
+
+          GPTChatbot chatbot = GPTChatbot("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", "davinci");
+          String response = await chatbot.generateResponse("Hello");
+          print('chal raha he');
+
+        },
         child: Icon(Icons.add),
         backgroundColor: Colors.white70,
       ),
@@ -370,3 +382,27 @@ class MyDrawer extends StatelessWidget {
     );
   }
 }
+
+// class MyButtonForAPI extends StatefulWidget {
+//
+//   @override
+//   State<MyButtonForAPI> createState() => _MyButtonForAPIState();
+// }
+//
+// class _MyButtonForAPIState extends State<MyButtonForAPI> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         floatingActionButton: FloatingActionButton(
+//           onPressed: () async {
+//             GPTChatbot chatbot = GPTChatbot("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", "davinci");
+//             String response = await chatbot.generateResponse("Hello");
+//           },
+//           child: Icon(Icons.add),
+//           backgroundColor: Colors.white70,
+//         ),
+//         floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+//     );
+//   }
+// }
+//
