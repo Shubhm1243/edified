@@ -5,7 +5,6 @@ import 'package:edified/screens/online_courses.dart';
 import 'package:edified/screens/register_screen/register.dart';
 import 'package:edified/screens/register_screen/study_material.dart';
 import 'package:edified/screens/welcome_screen.dart';
-import 'package:edified/search_for_gpt.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'screens/empty_screen.dart';
@@ -32,7 +31,6 @@ class MyApp extends StatelessWidget {
         OnlineCourses.id: (context) => OnlineCourses(),
         Ebooks.id: (context) => Ebooks(),
         StudyMaterial.id: (context) => StudyMaterial(),
-        SearchForGpt.id: (context) => SearchForGpt(),
       },
     );
   }

@@ -10,6 +10,8 @@ import 'package:edified/eddy/eddy.summarizer.dart';
 
 import '../search_for_gpt.dart';
 
+import 'Quiz/quiz_main.dart';
+
 class HomeScreen extends StatefulWidget {
   static String id = 'home_screen';
 
@@ -369,6 +371,12 @@ class MyDrawer extends StatelessWidget {
             title: const Text('Study Materials',style: TextStyle(fontSize: 22),),
             onTap: () {
               Navigator.pushNamed(context, StudyMaterial.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Quiz',style: TextStyle(fontSize: 22),),
+            onTap: () {
+              Navigator.pushNamed(context, Quizpage.id);
             },
           ),
           ListTile(
