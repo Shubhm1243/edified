@@ -10,7 +10,7 @@ class GPTChatbot {
 
   Future<String> generateResponse(String prompt) async {
     String apiUrl = "$_apiUrl$_modelId/completions";
-    Map data = {"prompt": prompt, "temperature": 0.5, "max_tokens": 500};
+    Map data = {"prompt": prompt, "temperature": 0.5, "max_tokens": 50};
     String body = json.encode(data);
 
     final response = await http.post(Uri.parse(apiUrl),
